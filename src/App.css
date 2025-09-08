@@ -1,0 +1,21 @@
+/* app.css  */
+/* also works if put in index.css */
+.grid-bg {
+  background-image: 
+    linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
+    linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
+  background-size: 14px 24px;
+}
+
+/* optional fade-out mask */
+.grid-mask {
+  mask-image: radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%);
+  mask-repeat: no-repeat;
+  mask-position: center top;
+  mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center top;
+  -webkit-mask-size: cover;
+}
+
