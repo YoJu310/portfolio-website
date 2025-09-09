@@ -1,5 +1,5 @@
 import React from 'react';
-// import ReactTypingEffect from 'react-typing-effect';
+import { TypeAnimation } from "react-type-animation";
 import Tilt from 'react-parallax-tilt';
 import profileImage from '../../assets/profile_img.jpg';
 
@@ -24,26 +24,28 @@ const About = () => {
           </h2>
           {/* Skills Heading with Typing Effect */}
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
-            <span className="text-white">I am a </span>
-            {/* <ReactTypingEffect
-              text={[
-                'Fullstack Developer',
-                'App Developer',
-                'UI/UX Designer',
-                'Coder',
+            {/* <span className="text-white">I am a </span> */}
+            <TypeAnimation
+              sequence={[
+                "I'm a MERN Stack Developer. ",
+                2000,
+                "I build solutions, not just applications. ",
+                2000,
+                "From Design to Modern UI. ",
+                2000,
+                "From concept to deploy, I bring solutions to life. ",
+                2000,
               ]}
-              speed={100}
-              eraseSpeed={50}
-              typingDelay={500}
-              eraseDelay={2000}
-              cursorRenderer={(cursor) => (
-                <span className="text-[#8245ec]">{cursor}</span>
-              )}
-            /> */}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+              cursor={true}
+              style={{ fontSize: "1.5rem", display: "inline-block" }}
+            />
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I am a full-stack developer with over 2 years of experience in
+            I am a <span className='font-bold'>FullStack Developer</span> with over 6 months of experience in
             building scalable web applications. Skilled in both front-end and
             back-end development, I specialize in the MERN stack and other
             modern technologies to create seamless user experiences and
